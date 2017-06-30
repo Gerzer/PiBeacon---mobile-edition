@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0E3DF601F06A2CB00A22EA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E3DF5F1F06A2CB00A22EA4 /* AppDelegate.swift */; };
+		C0E3DF621F06A2CB00A22EA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E3DF611F06A2CB00A22EA4 /* ViewController.swift */; };
+		C0E3DF651F06A2CB00A22EA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E3DF631F06A2CB00A22EA4 /* Main.storyboard */; };
+		C0E3DF671F06A2CB00A22EA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0E3DF661F06A2CB00A22EA4 /* Assets.xcassets */; };
+		C0E3DF6A1F06A2CB00A22EA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E3DF681F06A2CB00A22EA4 /* LaunchScreen.storyboard */; };
+		C0E3DF751F06A2CB00A22EA4 /* PiBeacon_Client___mobile_editionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E3DF741F06A2CB00A22EA4 /* PiBeacon_Client___mobile_editionTests.swift */; };
+		C0E3DF801F06A2CB00A22EA4 /* PiBeacon_Client___mobile_editionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E3DF7F1F06A2CB00A22EA4 /* PiBeacon_Client___mobile_editionUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0E3DF711F06A2CB00A22EA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0E3DF541F06A2CB00A22EA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0E3DF5B1F06A2CB00A22EA4;
+			remoteInfo = "PiBeacon Client - mobile edition";
+		};
+		C0E3DF7C1F06A2CB00A22EA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0E3DF541F06A2CB00A22EA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0E3DF5B1F06A2CB00A22EA4;
+			remoteInfo = "PiBeacon Client - mobile edition";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C0E3DF5C1F06A2CB00A22EA4 /* PiBeacon Client - mobile edition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PiBeacon Client - mobile edition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0E3DF5F1F06A2CB00A22EA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0E3DF611F06A2CB00A22EA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C0E3DF641F06A2CB00A22EA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0E3DF661F06A2CB00A22EA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0E3DF691F06A2CB00A22EA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0E3DF6B1F06A2CB00A22EA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0E3DF701F06A2CB00A22EA4 /* PiBeacon Client - mobile editionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PiBeacon Client - mobile editionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0E3DF741F06A2CB00A22EA4 /* PiBeacon_Client___mobile_editionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PiBeacon_Client___mobile_editionTests.swift"; sourceTree = "<group>"; };
+		C0E3DF761F06A2CB00A22EA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0E3DF7B1F06A2CB00A22EA4 /* PiBeacon Client - mobile editionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PiBeacon Client - mobile editionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0E3DF7F1F06A2CB00A22EA4 /* PiBeacon_Client___mobile_editionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PiBeacon_Client___mobile_editionUITests.swift"; sourceTree = "<group>"; };
+		C0E3DF811F06A2CB00A22EA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0E3DF591F06A2CB00A22EA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0E3DF6D1F06A2CB00A22EA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0E3DF781F06A2CB00A22EA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0E3DF531F06A2CB00A22EA4 = {
+			isa = PBXGroup;
+			children = (
+				C0E3DF5E1F06A2CB00A22EA4 /* PiBeacon Client - mobile edition */,
+				C0E3DF731F06A2CB00A22EA4 /* PiBeacon Client - mobile editionTests */,
+				C0E3DF7E1F06A2CB00A22EA4 /* PiBeacon Client - mobile editionUITests */,
+				C0E3DF5D1F06A2CB00A22EA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0E3DF5D1F06A2CB00A22EA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0E3DF5C1F06A2CB00A22EA4 /* PiBeacon Client - mobile edition.app */,
+				C0E3DF701F06A2CB00A22EA4 /* PiBeacon Client - mobile editionTests.xctest */,
+				C0E3DF7B1F06A2CB00A22EA4 /* PiBeacon Client - mobile editionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0E3DF5E1F06A2CB00A22EA4 /* PiBeacon Client - mobile edition */ = {
+			isa = PBXGroup;
+			children = (
+				C0E3DF5F1F06A2CB00A22EA4 /* AppDelegate.swift */,
+				C0E3DF611F06A2CB00A22EA4 /* ViewController.swift */,
+				C0E3DF631F06A2CB00A22EA4 /* Main.storyboard */,
+				C0E3DF661F06A2CB00A22EA4 /* Assets.xcassets */,
+				C0E3DF681F06A2CB00A22EA4 /* LaunchScreen.storyboard */,
+				C0E3DF6B1F06A2CB00A22EA4 /* Info.plist */,
+			);
+			path = "PiBeacon Client - mobile edition";
+			sourceTree = "<group>";
+		};
+		C0E3DF731F06A2CB00A22EA4 /* PiBeacon Client - mobile editionTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0E3DF741F06A2CB00A22EA4 /* PiBeacon_Client___mobile_editionTests.swift */,
+				C0E3DF761F06A2CB00A22EA4 /* Info.plist */,
+			);
+			path = "PiBeacon Client - mobile editionTests";
+			sourceTree = "<group>";
+		};
+		C0E3DF7E1F06A2CB00A22EA4 /* PiBeacon Client - mobile editionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C0E3DF7F1F06A2CB00A22EA4 /* PiBeacon_Client___mobile_editionUITests.swift */,
+				C0E3DF811F06A2CB00A22EA4 /* Info.plist */,
+			);
+			path = "PiBeacon Client - mobile editionUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0E3DF5B1F06A2CB00A22EA4 /* PiBeacon Client - mobile edition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0E3DF841F06A2CB00A22EA4 /* Build configuration list for PBXNativeTarget "PiBeacon Client - mobile edition" */;
+			buildPhases = (
+				C0E3DF581F06A2CB00A22EA4 /* Sources */,
+				C0E3DF591F06A2CB00A22EA4 /* Frameworks */,
+				C0E3DF5A1F06A2CB00A22EA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PiBeacon Client - mobile edition";
+			productName = "PiBeacon Client - mobile edition";
+			productReference = C0E3DF5C1F06A2CB00A22EA4 /* PiBeacon Client - mobile edition.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0E3DF6F1F06A2CB00A22EA4 /* PiBeacon Client - mobile editionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0E3DF871F06A2CB00A22EA4 /* Build configuration list for PBXNativeTarget "PiBeacon Client - mobile editionTests" */;
+			buildPhases = (
+				C0E3DF6C1F06A2CB00A22EA4 /* Sources */,
+				C0E3DF6D1F06A2CB00A22EA4 /* Frameworks */,
+				C0E3DF6E1F06A2CB00A22EA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0E3DF721F06A2CB00A22EA4 /* PBXTargetDependency */,
+			);
+			name = "PiBeacon Client - mobile editionTests";
+			productName = "PiBeacon Client - mobile editionTests";
+			productReference = C0E3DF701F06A2CB00A22EA4 /* PiBeacon Client - mobile editionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C0E3DF7A1F06A2CB00A22EA4 /* PiBeacon Client - mobile editionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0E3DF8A1F06A2CB00A22EA4 /* Build configuration list for PBXNativeTarget "PiBeacon Client - mobile editionUITests" */;
+			buildPhases = (
+				C0E3DF771F06A2CB00A22EA4 /* Sources */,
+				C0E3DF781F06A2CB00A22EA4 /* Frameworks */,
+				C0E3DF791F06A2CB00A22EA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0E3DF7D1F06A2CB00A22EA4 /* PBXTargetDependency */,
+			);
+			name = "PiBeacon Client - mobile editionUITests";
+			productName = "PiBeacon Client - mobile editionUITests";
+			productReference = C0E3DF7B1F06A2CB00A22EA4 /* PiBeacon Client - mobile editionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0E3DF541F06A2CB00A22EA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Gerzer;
+				TargetAttributes = {
+					C0E3DF5B1F06A2CB00A22EA4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = SYBLH277NF;
+						ProvisioningStyle = Automatic;
+					};
+					C0E3DF6F1F06A2CB00A22EA4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = SYBLH277NF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C0E3DF5B1F06A2CB00A22EA4;
+					};
+					C0E3DF7A1F06A2CB00A22EA4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = SYBLH277NF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C0E3DF5B1F06A2CB00A22EA4;
+					};
+				};
+			};
+			buildConfigurationList = C0E3DF571F06A2CB00A22EA4 /* Build configuration list for PBXProject "PiBeacon Client - mobile edition" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0E3DF531F06A2CB00A22EA4;
+			productRefGroup = C0E3DF5D1F06A2CB00A22EA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0E3DF5B1F06A2CB00A22EA4 /* PiBeacon Client - mobile edition */,
+				C0E3DF6F1F06A2CB00A22EA4 /* PiBeacon Client - mobile editionTests */,
+				C0E3DF7A1F06A2CB00A22EA4 /* PiBeacon Client - mobile editionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0E3DF5A1F06A2CB00A22EA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0E3DF6A1F06A2CB00A22EA4 /* LaunchScreen.storyboard in Resources */,
+				C0E3DF671F06A2CB00A22EA4 /* Assets.xcassets in Resources */,
+				C0E3DF651F06A2CB00A22EA4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0E3DF6E1F06A2CB00A22EA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0E3DF791F06A2CB00A22EA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0E3DF581F06A2CB00A22EA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0E3DF621F06A2CB00A22EA4 /* ViewController.swift in Sources */,
+				C0E3DF601F06A2CB00A22EA4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0E3DF6C1F06A2CB00A22EA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0E3DF751F06A2CB00A22EA4 /* PiBeacon_Client___mobile_editionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0E3DF771F06A2CB00A22EA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0E3DF801F06A2CB00A22EA4 /* PiBeacon_Client___mobile_editionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0E3DF721F06A2CB00A22EA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0E3DF5B1F06A2CB00A22EA4 /* PiBeacon Client - mobile edition */;
+			targetProxy = C0E3DF711F06A2CB00A22EA4 /* PBXContainerItemProxy */;
+		};
+		C0E3DF7D1F06A2CB00A22EA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0E3DF5B1F06A2CB00A22EA4 /* PiBeacon Client - mobile edition */;
+			targetProxy = C0E3DF7C1F06A2CB00A22EA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0E3DF631F06A2CB00A22EA4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0E3DF641F06A2CB00A22EA4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0E3DF681F06A2CB00A22EA4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0E3DF691F06A2CB00A22EA4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0E3DF821F06A2CB00A22EA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0E3DF831F06A2CB00A22EA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0E3DF851F06A2CB00A22EA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SYBLH277NF;
+				INFOPLIST_FILE = "PiBeacon Client - mobile edition/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gerzer.PiBeacon-Client---mobile-edition";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C0E3DF861F06A2CB00A22EA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SYBLH277NF;
+				INFOPLIST_FILE = "PiBeacon Client - mobile edition/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gerzer.PiBeacon-Client---mobile-edition";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C0E3DF881F06A2CB00A22EA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SYBLH277NF;
+				INFOPLIST_FILE = "PiBeacon Client - mobile editionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gerzer.PiBeacon-Client---mobile-editionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PiBeacon Client - mobile edition.app/PiBeacon Client - mobile edition";
+			};
+			name = Debug;
+		};
+		C0E3DF891F06A2CB00A22EA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SYBLH277NF;
+				INFOPLIST_FILE = "PiBeacon Client - mobile editionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gerzer.PiBeacon-Client---mobile-editionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PiBeacon Client - mobile edition.app/PiBeacon Client - mobile edition";
+			};
+			name = Release;
+		};
+		C0E3DF8B1F06A2CB00A22EA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = SYBLH277NF;
+				INFOPLIST_FILE = "PiBeacon Client - mobile editionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gerzer.PiBeacon-Client---mobile-editionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "PiBeacon Client - mobile edition";
+			};
+			name = Debug;
+		};
+		C0E3DF8C1F06A2CB00A22EA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = SYBLH277NF;
+				INFOPLIST_FILE = "PiBeacon Client - mobile editionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gerzer.PiBeacon-Client---mobile-editionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "PiBeacon Client - mobile edition";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0E3DF571F06A2CB00A22EA4 /* Build configuration list for PBXProject "PiBeacon Client - mobile edition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E3DF821F06A2CB00A22EA4 /* Debug */,
+				C0E3DF831F06A2CB00A22EA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0E3DF841F06A2CB00A22EA4 /* Build configuration list for PBXNativeTarget "PiBeacon Client - mobile edition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E3DF851F06A2CB00A22EA4 /* Debug */,
+				C0E3DF861F06A2CB00A22EA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C0E3DF871F06A2CB00A22EA4 /* Build configuration list for PBXNativeTarget "PiBeacon Client - mobile editionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E3DF881F06A2CB00A22EA4 /* Debug */,
+				C0E3DF891F06A2CB00A22EA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C0E3DF8A1F06A2CB00A22EA4 /* Build configuration list for PBXNativeTarget "PiBeacon Client - mobile editionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E3DF8B1F06A2CB00A22EA4 /* Debug */,
+				C0E3DF8C1F06A2CB00A22EA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0E3DF541F06A2CB00A22EA4 /* Project object */;
+}
