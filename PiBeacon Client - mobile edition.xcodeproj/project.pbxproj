@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BDF4597C7D3AF1AA257F9F5 /* Pods_PiBeacon_Client___mobile_editionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D091A8B1DEDED93F35274C /* Pods_PiBeacon_Client___mobile_editionTests.framework */; };
+		5338BB439AE0F613BD5E74ED /* Pods_PiBeacon_Client___mobile_edition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED923EB03E0A27A9F57599B /* Pods_PiBeacon_Client___mobile_edition.framework */; };
+		C0E214581F0D5FB800B1FA8C /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E214571F0D40AF00B1FA8C /* Background.png */; };
 		C0E3DF601F06A2CB00A22EA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E3DF5F1F06A2CB00A22EA4 /* AppDelegate.swift */; };
 		C0E3DF621F06A2CB00A22EA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E3DF611F06A2CB00A22EA4 /* ViewController.swift */; };
 		C0E3DF651F06A2CB00A22EA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E3DF631F06A2CB00A22EA4 /* Main.storyboard */; };
@@ -14,6 +17,8 @@
 		C0E3DF6A1F06A2CB00A22EA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E3DF681F06A2CB00A22EA4 /* LaunchScreen.storyboard */; };
 		C0E3DF751F06A2CB00A22EA4 /* PiBeacon_Client___mobile_editionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E3DF741F06A2CB00A22EA4 /* PiBeacon_Client___mobile_editionTests.swift */; };
 		C0E3DF801F06A2CB00A22EA4 /* PiBeacon_Client___mobile_editionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E3DF7F1F06A2CB00A22EA4 /* PiBeacon_Client___mobile_editionUITests.swift */; };
+		C0FE17E51F0E7DB5003DB63B /* BeaconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE17E41F0E7DB5003DB63B /* BeaconCell.swift */; };
+		D907EA484C8A5DB8834B5EE9 /* Pods_PiBeacon_Client___mobile_editionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2276990045D9201ED2994A8C /* Pods_PiBeacon_Client___mobile_editionUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1ED923EB03E0A27A9F57599B /* Pods_PiBeacon_Client___mobile_edition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_PiBeacon_Client___mobile_edition.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2276990045D9201ED2994A8C /* Pods_PiBeacon_Client___mobile_editionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_PiBeacon_Client___mobile_editionUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A34B67F3BDEE930961F1D1B /* Pods-PiBeacon Client - mobile editionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiBeacon Client - mobile editionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PiBeacon Client - mobile editionTests/Pods-PiBeacon Client - mobile editionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		59B309EE6A3EC82F6164C1CB /* Pods-PiBeacon Client - mobile edition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiBeacon Client - mobile edition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PiBeacon Client - mobile edition/Pods-PiBeacon Client - mobile edition.debug.xcconfig"; sourceTree = "<group>"; };
+		A53299590ACE52D9E14D3B97 /* Pods-PiBeacon Client - mobile edition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiBeacon Client - mobile edition.release.xcconfig"; path = "Pods/Target Support Files/Pods-PiBeacon Client - mobile edition/Pods-PiBeacon Client - mobile edition.release.xcconfig"; sourceTree = "<group>"; };
+		B776EB10D0CD894D5F1E919E /* Pods-PiBeacon Client - mobile editionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiBeacon Client - mobile editionUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PiBeacon Client - mobile editionUITests/Pods-PiBeacon Client - mobile editionUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C0E214571F0D40AF00B1FA8C /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 		C0E3DF5C1F06A2CB00A22EA4 /* PiBeacon Client - mobile edition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PiBeacon Client - mobile edition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E3DF5F1F06A2CB00A22EA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0E3DF611F06A2CB00A22EA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +59,10 @@
 		C0E3DF7B1F06A2CB00A22EA4 /* PiBeacon Client - mobile editionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PiBeacon Client - mobile editionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E3DF7F1F06A2CB00A22EA4 /* PiBeacon_Client___mobile_editionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PiBeacon_Client___mobile_editionUITests.swift"; sourceTree = "<group>"; };
 		C0E3DF811F06A2CB00A22EA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0FE17E41F0E7DB5003DB63B /* BeaconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconCell.swift; sourceTree = "<group>"; };
+		C3ADE6F3D07D29E8788946C9 /* Pods-PiBeacon Client - mobile editionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiBeacon Client - mobile editionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PiBeacon Client - mobile editionTests/Pods-PiBeacon Client - mobile editionTests.release.xcconfig"; sourceTree = "<group>"; };
+		E1D091A8B1DEDED93F35274C /* Pods_PiBeacon_Client___mobile_editionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_PiBeacon_Client___mobile_editionTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F54FB560BCF49753B795447E /* Pods-PiBeacon Client - mobile editionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiBeacon Client - mobile editionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PiBeacon Client - mobile editionUITests/Pods-PiBeacon Client - mobile editionUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5338BB439AE0F613BD5E74ED /* Pods_PiBeacon_Client___mobile_edition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BDF4597C7D3AF1AA257F9F5 /* Pods_PiBeacon_Client___mobile_editionTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +86,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D907EA484C8A5DB8834B5EE9 /* Pods_PiBeacon_Client___mobile_editionUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B264AE899D80C1705D77C93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59B309EE6A3EC82F6164C1CB /* Pods-PiBeacon Client - mobile edition.debug.xcconfig */,
+				A53299590ACE52D9E14D3B97 /* Pods-PiBeacon Client - mobile edition.release.xcconfig */,
+				2A34B67F3BDEE930961F1D1B /* Pods-PiBeacon Client - mobile editionTests.debug.xcconfig */,
+				C3ADE6F3D07D29E8788946C9 /* Pods-PiBeacon Client - mobile editionTests.release.xcconfig */,
+				F54FB560BCF49753B795447E /* Pods-PiBeacon Client - mobile editionUITests.debug.xcconfig */,
+				B776EB10D0CD894D5F1E919E /* Pods-PiBeacon Client - mobile editionUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3F6108B04D8B8B568F7AE97E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1ED923EB03E0A27A9F57599B /* Pods_PiBeacon_Client___mobile_edition.framework */,
+				E1D091A8B1DEDED93F35274C /* Pods_PiBeacon_Client___mobile_editionTests.framework */,
+				2276990045D9201ED2994A8C /* Pods_PiBeacon_Client___mobile_editionUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C0E3DF531F06A2CB00A22EA4 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +123,8 @@
 				C0E3DF731F06A2CB00A22EA4 /* PiBeacon Client - mobile editionTests */,
 				C0E3DF7E1F06A2CB00A22EA4 /* PiBeacon Client - mobile editionUITests */,
 				C0E3DF5D1F06A2CB00A22EA4 /* Products */,
+				2B264AE899D80C1705D77C93 /* Pods */,
+				3F6108B04D8B8B568F7AE97E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,7 +143,9 @@
 			children = (
 				C0E3DF5F1F06A2CB00A22EA4 /* AppDelegate.swift */,
 				C0E3DF611F06A2CB00A22EA4 /* ViewController.swift */,
+				C0FE17E41F0E7DB5003DB63B /* BeaconCell.swift */,
 				C0E3DF631F06A2CB00A22EA4 /* Main.storyboard */,
+				C0E214571F0D40AF00B1FA8C /* Background.png */,
 				C0E3DF661F06A2CB00A22EA4 /* Assets.xcassets */,
 				C0E3DF681F06A2CB00A22EA4 /* LaunchScreen.storyboard */,
 				C0E3DF6B1F06A2CB00A22EA4 /* Info.plist */,
@@ -132,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0E3DF841F06A2CB00A22EA4 /* Build configuration list for PBXNativeTarget "PiBeacon Client - mobile edition" */;
 			buildPhases = (
+				4C179AE7FEBA09A03768D4E7 /* [CP] Check Pods Manifest.lock */,
 				C0E3DF581F06A2CB00A22EA4 /* Sources */,
 				C0E3DF591F06A2CB00A22EA4 /* Frameworks */,
 				C0E3DF5A1F06A2CB00A22EA4 /* Resources */,
+				18296FF2FC0A7403C68CC08E /* [CP] Embed Pods Frameworks */,
+				782F9D0B1F03F4B0588BD1A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0E3DF871F06A2CB00A22EA4 /* Build configuration list for PBXNativeTarget "PiBeacon Client - mobile editionTests" */;
 			buildPhases = (
+				9FEA42F0AF9CD43A387E2975 /* [CP] Check Pods Manifest.lock */,
 				C0E3DF6C1F06A2CB00A22EA4 /* Sources */,
 				C0E3DF6D1F06A2CB00A22EA4 /* Frameworks */,
 				C0E3DF6E1F06A2CB00A22EA4 /* Resources */,
+				847545599869E2586F911280 /* [CP] Embed Pods Frameworks */,
+				38D862E7E46783F390F0EFA0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0E3DF8A1F06A2CB00A22EA4 /* Build configuration list for PBXNativeTarget "PiBeacon Client - mobile editionUITests" */;
 			buildPhases = (
+				7A5D9E485C567F9817149FA9 /* [CP] Check Pods Manifest.lock */,
 				C0E3DF771F06A2CB00A22EA4 /* Sources */,
 				C0E3DF781F06A2CB00A22EA4 /* Frameworks */,
 				C0E3DF791F06A2CB00A22EA4 /* Resources */,
+				72FA28298E170C13A9311AD0 /* [CP] Embed Pods Frameworks */,
+				48F909A5B76723F4EF8EB15F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,23 +243,31 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Gerzer;
 				TargetAttributes = {
 					C0E3DF5B1F06A2CB00A22EA4 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = SYBLH277NF;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 					C0E3DF6F1F06A2CB00A22EA4 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = SYBLH277NF;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = C0E3DF5B1F06A2CB00A22EA4;
 					};
 					C0E3DF7A1F06A2CB00A22EA4 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = SYBLH277NF;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = C0E3DF5B1F06A2CB00A22EA4;
 					};
@@ -236,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0E3DF6A1F06A2CB00A22EA4 /* LaunchScreen.storyboard in Resources */,
+				C0E214581F0D5FB800B1FA8C /* Background.png in Resources */,
 				C0E3DF671F06A2CB00A22EA4 /* Assets.xcassets in Resources */,
 				C0E3DF651F06A2CB00A22EA4 /* Main.storyboard in Resources */,
 			);
@@ -257,6 +321,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18296FF2FC0A7403C68CC08E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PiBeacon Client - mobile edition/Pods-PiBeacon Client - mobile edition-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38D862E7E46783F390F0EFA0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PiBeacon Client - mobile editionTests/Pods-PiBeacon Client - mobile editionTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48F909A5B76723F4EF8EB15F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PiBeacon Client - mobile editionUITests/Pods-PiBeacon Client - mobile editionUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C179AE7FEBA09A03768D4E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		72FA28298E170C13A9311AD0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PiBeacon Client - mobile editionUITests/Pods-PiBeacon Client - mobile editionUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		782F9D0B1F03F4B0588BD1A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PiBeacon Client - mobile edition/Pods-PiBeacon Client - mobile edition-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A5D9E485C567F9817149FA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		847545599869E2586F911280 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PiBeacon Client - mobile editionTests/Pods-PiBeacon Client - mobile editionTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FEA42F0AF9CD43A387E2975 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C0E3DF581F06A2CB00A22EA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -264,6 +466,7 @@
 			files = (
 				C0E3DF621F06A2CB00A22EA4 /* ViewController.swift in Sources */,
 				C0E3DF601F06A2CB00A22EA4 /* AppDelegate.swift in Sources */,
+				C0FE17E51F0E7DB5003DB63B /* BeaconCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +531,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -336,7 +541,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -379,7 +588,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -387,7 +598,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -415,6 +630,7 @@
 		};
 		C0E3DF851F06A2CB00A22EA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59B309EE6A3EC82F6164C1CB /* Pods-PiBeacon Client - mobile edition.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SYBLH277NF;
@@ -422,12 +638,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gerzer.PiBeacon-Client---mobile-edition";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		C0E3DF861F06A2CB00A22EA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A53299590ACE52D9E14D3B97 /* Pods-PiBeacon Client - mobile edition.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SYBLH277NF;
@@ -435,12 +653,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gerzer.PiBeacon-Client---mobile-edition";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
 		C0E3DF881F06A2CB00A22EA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A34B67F3BDEE930961F1D1B /* Pods-PiBeacon Client - mobile editionTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -449,13 +669,15 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gerzer.PiBeacon-Client---mobile-editionTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PiBeacon Client - mobile edition.app/PiBeacon Client - mobile edition";
 			};
 			name = Debug;
 		};
 		C0E3DF891F06A2CB00A22EA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3ADE6F3D07D29E8788946C9 /* Pods-PiBeacon Client - mobile editionTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -464,13 +686,15 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gerzer.PiBeacon-Client---mobile-editionTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PiBeacon Client - mobile edition.app/PiBeacon Client - mobile edition";
 			};
 			name = Release;
 		};
 		C0E3DF8B1F06A2CB00A22EA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F54FB560BCF49753B795447E /* Pods-PiBeacon Client - mobile editionUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = SYBLH277NF;
@@ -478,13 +702,15 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gerzer.PiBeacon-Client---mobile-editionUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = "PiBeacon Client - mobile edition";
 			};
 			name = Debug;
 		};
 		C0E3DF8C1F06A2CB00A22EA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B776EB10D0CD894D5F1E919E /* Pods-PiBeacon Client - mobile editionUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = SYBLH277NF;
@@ -492,7 +718,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gerzer.PiBeacon-Client---mobile-editionUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = "PiBeacon Client - mobile edition";
 			};
 			name = Release;
@@ -516,6 +743,7 @@
 				C0E3DF861F06A2CB00A22EA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0E3DF871F06A2CB00A22EA4 /* Build configuration list for PBXNativeTarget "PiBeacon Client - mobile editionTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +752,7 @@
 				C0E3DF891F06A2CB00A22EA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0E3DF8A1F06A2CB00A22EA4 /* Build configuration list for PBXNativeTarget "PiBeacon Client - mobile editionUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +761,7 @@
 				C0E3DF8C1F06A2CB00A22EA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
