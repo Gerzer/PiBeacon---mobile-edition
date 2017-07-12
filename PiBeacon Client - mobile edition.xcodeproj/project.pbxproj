@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0BDF4597C7D3AF1AA257F9F5 /* Pods_PiBeacon_Client___mobile_editionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D091A8B1DEDED93F35274C /* Pods_PiBeacon_Client___mobile_editionTests.framework */; };
 		5338BB439AE0F613BD5E74ED /* Pods_PiBeacon_Client___mobile_edition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED923EB03E0A27A9F57599B /* Pods_PiBeacon_Client___mobile_edition.framework */; };
+		C063E37E1F0FCCD80072B5D2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C063E37C1F0FCC960072B5D2 /* Alamofire.framework */; };
 		C0E214581F0D5FB800B1FA8C /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E214571F0D40AF00B1FA8C /* Background.png */; };
 		C0E3DF601F06A2CB00A22EA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E3DF5F1F06A2CB00A22EA4 /* AppDelegate.swift */; };
 		C0E3DF621F06A2CB00A22EA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E3DF611F06A2CB00A22EA4 /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 		59B309EE6A3EC82F6164C1CB /* Pods-PiBeacon Client - mobile edition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiBeacon Client - mobile edition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PiBeacon Client - mobile edition/Pods-PiBeacon Client - mobile edition.debug.xcconfig"; sourceTree = "<group>"; };
 		A53299590ACE52D9E14D3B97 /* Pods-PiBeacon Client - mobile edition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiBeacon Client - mobile edition.release.xcconfig"; path = "Pods/Target Support Files/Pods-PiBeacon Client - mobile edition/Pods-PiBeacon Client - mobile edition.release.xcconfig"; sourceTree = "<group>"; };
 		B776EB10D0CD894D5F1E919E /* Pods-PiBeacon Client - mobile editionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiBeacon Client - mobile editionUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PiBeacon Client - mobile editionUITests/Pods-PiBeacon Client - mobile editionUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C063E37C1F0FCC960072B5D2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/PiBeacon_Client_-_mobile_edition-aanhcncdvpraubeewhdfspurfqps/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		C0E214571F0D40AF00B1FA8C /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 		C0E3DF5C1F06A2CB00A22EA4 /* PiBeacon Client - mobile edition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PiBeacon Client - mobile edition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E3DF5F1F06A2CB00A22EA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5338BB439AE0F613BD5E74ED /* Pods_PiBeacon_Client___mobile_edition.framework in Frameworks */,
+				C063E37E1F0FCCD80072B5D2 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +112,7 @@
 		3F6108B04D8B8B568F7AE97E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C063E37C1F0FCC960072B5D2 /* Alamofire.framework */,
 				1ED923EB03E0A27A9F57599B /* Pods_PiBeacon_Client___mobile_edition.framework */,
 				E1D091A8B1DEDED93F35274C /* Pods_PiBeacon_Client___mobile_editionTests.framework */,
 				2276990045D9201ED2994A8C /* Pods_PiBeacon_Client___mobile_editionUITests.framework */,
@@ -635,6 +639,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SYBLH277NF;
 				INFOPLIST_FILE = "PiBeacon Client - mobile edition/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gerzer.PiBeacon-Client---mobile-edition";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -650,6 +655,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SYBLH277NF;
 				INFOPLIST_FILE = "PiBeacon Client - mobile edition/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gerzer.PiBeacon-Client---mobile-edition";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -669,7 +675,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gerzer.PiBeacon-Client---mobile-editionTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PiBeacon Client - mobile edition.app/PiBeacon Client - mobile edition";
 			};
@@ -686,7 +692,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gerzer.PiBeacon-Client---mobile-editionTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PiBeacon Client - mobile edition.app/PiBeacon Client - mobile edition";
 			};
@@ -702,7 +708,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gerzer.PiBeacon-Client---mobile-editionUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = "PiBeacon Client - mobile edition";
 			};
@@ -718,7 +724,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gerzer.PiBeacon-Client---mobile-editionUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = "PiBeacon Client - mobile edition";
 			};
