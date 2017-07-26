@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  PiBeacon Client - mobile edition
 //
-//  Created by Gabriel Jacoby-Cooper on 6/30/17.
+//  Created by Gerzer on 6/30/17.
 //  Copyright © 2017 Gerzer. All rights reserved.
 //
 
@@ -12,11 +12,17 @@ import Alamofire
 
 class ViewController: UIViewController {
 	
+	@IBOutlet weak var activityIndicatorLabel: UILabel!
+	@IBOutlet weak var activityIndicatorContainerView: UIVisualEffectView!
 	@IBOutlet weak var collectionView: UICollectionView!
 	var locationManager = CLLocationManager()
+	var justEntered = false
+	var justExited = false
+	var backgroundTask: UIBackgroundTaskIdentifier = UIBackgroundTaskInvalid
 	
-	@IBAction func refreshBeacons(_ sender: Any) {
-		self.collectionView.reloadData()
+	@objc func refreshBeacons(_ sender: Any) {
+		collectionView.reloadData()
+		collectionView.refreshControl?.endRefreshing()
 	}
 	
 	@IBAction func addBeacon(_ sender: Any) {
@@ -36,6 +42,8 @@ class ViewController: UIViewController {
 			textField.returnKeyType = UIReturnKeyType.continue
 		}
 		let addAction = UIAlertAction(title: "Add", style: UIAlertActionStyle.default, handler: { (alertAction) in
+			self.activityIndicatorLabel.text = "Adding Beacon..."
+			self.activityIndicatorContainerView.isHidden = false
 			let defaults = UserDefaults.standard
 			var addressTextField: UITextField? = nil
 			var nameTextField: UITextField? = nil
@@ -60,20 +68,24 @@ class ViewController: UIViewController {
 							let minor = defaults.integer(forKey: "minor") + 1
 							Alamofire.request("http://" + beaconAddress + "/update", method: HTTPMethod.get, parameters: ["major": String(major, radix: 16, uppercase: true).leftPadding(toLength: 4, withPad: "0"), "minor": String(minor, radix: 16, uppercase: true).leftPadding(toLength: 4, withPad: "0")]).responseString(completionHandler: { (response) in
 								if response.result.value == "Success" {
-									beaconArray.append(["address": beaconAddress, "name": beaconName, "major": major, "minor": minor])
+									beaconArray.append(["address": beaconAddress, "name": beaconName, "major": major, "minor": minor, "enter": "", "exit": ""])
 									defaults.set(beaconArray, forKey: "beacons")
 									defaults.set(major, forKey: "major")
 									defaults.set(minor, forKey: "minor")
+									self.startMonitoringBeaconRegion(minor: minor)
 									self.collectionView.reloadData()
+									self.activityIndicatorContainerView.isHidden = true
 								} else {
 									let errorAlert = UIAlertController(title: "Beacon Unreachable", message: "The beacon is currently unreachable. Check that it and this device are connected to the same network.", preferredStyle: UIAlertControllerStyle.alert)
 									errorAlert.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default, handler: nil))
+									self.activityIndicatorContainerView.isHidden = true
 									self.present(errorAlert, animated: true, completion: nil)
 								}
 							})
 						} else {
 							let errorAlert = UIAlertController(title: "Beacon Already Added", message: "A beacon with this address has already been added.", preferredStyle: UIAlertControllerStyle.alert)
 							errorAlert.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default, handler: nil))
+							self.activityIndicatorContainerView.isHidden = true
 							self.present(errorAlert, animated: true, completion: nil)
 						}
 					} else {
@@ -81,13 +93,16 @@ class ViewController: UIViewController {
 						let minor = 0
 						Alamofire.request("http://" + beaconAddress + "/update", method: HTTPMethod.get, parameters: ["major": String(major, radix: 16, uppercase: true).leftPadding(toLength: 4, withPad: "0"), "minor": String(minor, radix: 16, uppercase: true).leftPadding(toLength: 4, withPad: "0")]).responseString(completionHandler: { (response) in
 							if response.result.value == "Success" {
-								defaults.set([["address": beaconAddress, "name": beaconName, "major": major, "minor": minor]], forKey: "beacons")
+								defaults.set([["address": beaconAddress, "name": beaconName, "major": major, "minor": minor, "enter": "", "exit": ""]], forKey: "beacons")
 								defaults.set(major, forKey: "major")
 								defaults.set(minor, forKey: "minor")
+								self.startMonitoringBeaconRegion(minor: minor)
 								self.collectionView.reloadData()
+								self.activityIndicatorContainerView.isHidden = true
 							} else {
 								let errorAlert = UIAlertController(title: "Beacon Unreachable", message: "The beacon is currently unreachable. Check that it and this device are connected to the same network.", preferredStyle: UIAlertControllerStyle.alert)
 								errorAlert.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default, handler: nil))
+								self.activityIndicatorContainerView.isHidden = true
 								self.present(errorAlert, animated: true, completion: nil)
 							}
 						})
@@ -99,23 +114,47 @@ class ViewController: UIViewController {
 		addBeaconAlert.addAction(addAction)
 		addBeaconAlert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
 		addBeaconAlert.preferredAction = addAction
-		self.present(addBeaconAlert, animated: true, completion: nil)
+		present(addBeaconAlert, animated: true, completion: nil)
+	}
+	
+	func registerBackgroundTask() {
+		backgroundTask = UIApplication.shared.beginBackgroundTask(expirationHandler: {
+			self.endBackgroundTask()
+		})
+		assert(backgroundTask != UIBackgroundTaskInvalid)
+	}
+	
+	func endBackgroundTask() {
+		UIApplication.shared.endBackgroundTask(backgroundTask)
+		backgroundTask = UIBackgroundTaskInvalid
+	}
+	
+	@objc func reinstateBackgroundTask() {
+		if backgroundTask == UIBackgroundTaskInvalid {
+			registerBackgroundTask()
+		}
 	}
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 		collectionView.dataSource = self
-//		if CLLocationManager.isMonitoringAvailable(for: CLBeaconRegion.self) {
-//			let proximityUUID = UUID(uuidString: "618496F1-C20A-4E8F-BA2A-A00CCEE44565")
-//			self.locationManager.startRangingBeacons(in: CLBeaconRegion(proximityUUID: proximityUUID!, identifier: "com.gerzer.PiBeaconRegion"))
-//		}
+		let refreshControl = UIRefreshControl()
+		refreshControl.attributedTitle = NSAttributedString(string: "Refresh Beacons")
+		refreshControl.addTarget(self, action: #selector(refreshBeacons(_:)), for: UIControlEvents.valueChanged)
+		collectionView.refreshControl = refreshControl
+		configureLocationServices()
+		NotificationCenter.default.addObserver(self, selector: #selector(reinstateBackgroundTask), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+	
+	deinit {
+		NotificationCenter.default.removeObserver(self)
+	}
 	
 }
 
@@ -164,19 +203,76 @@ extension ViewController: UICollectionViewDataSource {
 extension ViewController: CLLocationManagerDelegate {
 	
 	func configureLocationServices() {
-		self.locationManager.delegate = self
-		let authorizationStatus = CLLocationManager.authorizationStatus()
-		switch authorizationStatus {
-		case .notDetermined:
-			self.locationManager.requestWhenInUseAuthorization()
-			break
-		default:
-			break
+		locationManager.delegate = self
+		locationManager.allowsBackgroundLocationUpdates = true
+		locationManager.requestAlwaysAuthorization()
+	}
+	
+	func startMonitoringBeaconRegion(minor: Int) {
+		let proximityUUID = UUID(uuidString: "618496F1-C20A-4E8F-BA2A-A00CCEE44565")
+		let defaults = UserDefaults.standard
+		let beaconRegion = CLBeaconRegion(proximityUUID: proximityUUID!, major: UInt16(defaults.integer(forKey: "major")), minor: UInt16(minor), identifier: "com.gerzer.PiBeacon-Region")
+		locationManager.startMonitoring(for: beaconRegion)
+		registerBackgroundTask()
+	}
+	
+	func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
+		if let beaconRegion = region as? CLBeaconRegion {
+			let defaults = UserDefaults.standard
+			if let beaconArray = defaults.array(forKey: "beacons") {
+				for beacon in beaconArray {
+					if beaconRegion.minor as? Int == (beacon as! [String: Any])["minor"] as? Int {
+						locationManager.startRangingBeacons(in: beaconRegion)
+						break
+					}
+				}
+			}
+		}
+	}
+	
+	func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
+		if let beaconRegion = region as? CLBeaconRegion {
+			let defaults = UserDefaults.standard
+			if let beaconArray = defaults.array(forKey: "beacons") {
+				for beacon in beaconArray {
+					if beaconRegion.minor as? Int == (beacon as! [String: Any])["minor"] as? Int {
+						Alamofire.request((beacon as! [String: Any])["exit"] as! String, method: HTTPMethod.get)
+						break
+					}
+				}
+			}
 		}
 	}
 	
 	func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
-		
+		let defaults = UserDefaults.standard
+		if let beaconArray = defaults.array(forKey: "beacons") {
+			for beacon in beaconArray {
+				if region.minor as? Int == (beacon as! [String: Any])["minor"] as? Int {
+					if let firstBeacon = beacons.first {
+						for cell in collectionView.visibleCells {
+							if let beaconCell = cell as? BeaconCell {
+								if beaconCell.minor == region.minor as? Int {
+									if beaconCell.arController.isViewLoaded {
+										beaconCell.arController.setBeaconRangingStatus(proximity: firstBeacon.proximity)
+										return
+									}
+								}
+							}
+						}
+						switch firstBeacon.proximity {
+						case CLProximity.immediate, CLProximity.near:
+							locationManager.stopRangingBeacons(in: region)
+							Alamofire.request((beacon as! [String: Any])["enter"] as! String, method: HTTPMethod.get)
+							break
+						default:
+							break
+						}
+					}
+					break
+				}
+			}
+		}
 	}
 	
 }

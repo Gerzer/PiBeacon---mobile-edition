@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  PiBeacon Client - mobile edition
 //
-//  Created by Gabriel Jacoby-Cooper on 6/30/17.
+//  Created by Gerzer on 6/30/17.
 //  Copyright © 2017 Gerzer. All rights reserved.
 //
 
@@ -12,11 +12,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+	
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        return true
+		return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -41,6 +40,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+	func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+		switch shortcutItem.type {
+		case "com.gerzer.PiBeacon-Client---mobile-edition.Add-Beacon":
+			(window?.rootViewController as? ViewController)?.addBeacon(Any.self)
+			completionHandler(true)
+			break
+		default:
+			completionHandler(false)
+			break
+		}
+	}
+	
 }
 
